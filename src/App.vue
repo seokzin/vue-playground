@@ -1,4 +1,8 @@
 <template>
   <h1>Hello World</h1>
-  <button>Click</button>
+  <CounterButton />
 </template>
+
+<script setup>
+import CounterButton from '@/components/CounterButton.vue'
+</script>
