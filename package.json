@@ -15,17 +15,11 @@
     "reinstall": "yarn clean && yarn install",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:css": "stylelint \"**/*.{vue,css,scss}\" --ignore-path .gitignore",
-    "format": "prettier --write . --ignore-path .gitignore",
+    "format": "prettier . --ignore-path .gitignore",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test:coverage"
-    }
-  },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,vue}": [
+    "*.{ts,vue}": [
       "yarn lint --fix",
       "yarn lint:css --fix",
       "yarn format --write"
