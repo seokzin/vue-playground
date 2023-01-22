@@ -17,7 +17,7 @@
     "reinstall": "yarn clean && yarn install",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:css": "stylelint \"**/*.{vue,css,scss}\" --ignore-path .gitignore",
-    "format": "prettier . --ignore-path .gitignore",
+    "format": "prettier . --ignore-path .gitignore --write",
     "prepare": "husky install"
   },
   "lint-staged": {
