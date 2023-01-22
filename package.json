@@ -22,9 +22,9 @@
   },
   "lint-staged": {
     "*.{ts,vue}": [
-      "yarn lint --fix",
-      "yarn lint:css --fix",
-      "yarn format --write"
+      "eslint --fix",
+      "stylelint --fix",
+      "prettier --write"
     ]
   },
   "dependencies": {
